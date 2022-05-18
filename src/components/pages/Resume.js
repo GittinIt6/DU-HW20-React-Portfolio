@@ -1,9 +1,33 @@
 import resume from '../../assets/files/MJ-resume.pdf'
 
+// const styTitle = {
+//     fontSize: 16,
+//     margin: 10,
+    
+// };
+
+const quals = [
+{ id: 1, name: "Coding Experience (React, Nodejs, Javascript, HTML, CSS)" },
+{ id: 2, name: "Coding Database (MySQL, GraphQL, MongoDB)" },
+{ id: 3, name: "Coding API (Creating and Using)" },
+{ id: 4, name: "IT Team Management" },
+{ id: 5, name: "IT Architecture Design and Review" },
+{ id: 6, name: "Networking (IP and Storage)" },
+{ id: 7, name: "IT Security" },
+{ id: 8, name: "Server Administration" },
+{ id: 9, name: "Data Center Infrastructure" },
+{ id: 10, name: "Virtual Infrastructure" },
+{ id: 11, name: "Backup / Disaster Recovery" }, 
+{ id: 12, name: "High Availability Services" },
+{ id: 13, name: "Hardware Consolidation" },
+{ id: 14, name: "File, Database, and Web Server" }, 
+{ id: 15, name: "Cloud Infrastructure" }
+]
+
 const Resume = () => {
     return (
-        <div>
-            Resume
+        <div className='Resume'>
+            <div className="ResumeTitle">Resume</div>
             <p>
             <a
              href={resume}
@@ -11,25 +35,13 @@ const Resume = () => {
                 Download Resume (PDF)
             </a>
             </p>
-            <p>Summary Of Qualifications:
+            <p>Summary Of Qualifications:</p>
                 <ul>
-                <li>Coding Experience (React, Nodejs, Javascript, HTML, CSS</li>
-                <li>Coding Database (MySQL, GraphQL, MongoDB)</li>
-                <li>Coding API (Creating and Using)</li>
-                <li>IT Team Management</li>
-                <li>IT Architecture Design and Review</li>
-                <li>Networking (IP and Storage)</li>
-                <li>IT Security</li>
-                <li>Server Administration</li>
-                <li>Data Center Infrastructure</li>
-                <li>Virtual Infrastructure</li>
-                <li>Backup / Disaster Recovery</li> 
-                <li>High Availability Services</li>
-                <li>Hardware Consolidation</li>
-                <li>File, Database, and Web Server</li> 
-                <li>Cloud Infrastructure</li>
+                {quals.map((qual) =>
+                    <li key={qual.id}>{`${qual.name}`}</li>
+                )}
                 </ul>
-            </p>
+            
         </div>
     );
 }

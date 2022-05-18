@@ -11,7 +11,11 @@
     --turquish: rgb(156, 230, 243);
   }
 
-/* Setting max width of website and centered */
+.Error {
+    color: red;
+}
+
+  /* Setting max width of website and centered */
 body{
     max-width: 1200px;
     margin:auto;
@@ -128,11 +132,20 @@ main{
 
 /* individual sections flex row -normal viewing */
 #AboutMe,
-#Work,
 #ContactMe{
     display: flex;
     flex-direction: row;
     gap: 30px 20px;
+}
+
+.Work{
+    display: flex;
+    flex-direction: row;
+    gap: 30px 20px; 
+}
+.Contact {
+    margin-left: 40%;
+    padding: 10px;
 }
 
 /* section descriptions aligned to right and vertical separator line added */
@@ -168,7 +181,18 @@ main section article p{
     list-style: none;
     padding: 0;
     width: 80%;
+    max-width: 700px;
+    /* margin: auto; */
 }
+.Resume{
+    margin-left: 20%;
+}
+
+.ResumeTitle {
+    padding: 0px 10px 0px 0px;
+    font-size: 24px;
+}
+
 
 /* border setup for work items - initially opacity setting until hover */
 /* content will be set with abosolute position on each item */
@@ -248,14 +272,23 @@ main ul li a{
     height: 20px;
     font-size: small;
 }
+
+.work-summary-bg{
+    background-color: var(--turquish);
+}
+
+.ContactForm {
+   padding: 5px;
+}
 /* ----------------------------------------- */
 
 /* contact/footer section configuration */
 footer section{
-    width:80%;
+    /* width:80%; */
 }
 footer section ul{
-    text-align: left;
+    text-align: center;
+    margin: auto;
 }
 footer section ul li{
     color: white;
@@ -267,8 +300,8 @@ footer section ul li a{
 }
 
 /* added copyright at very bottom */
-#second-footer{
-    margin:auto
+.footBar{
+    text-align: center;
 }
 
 /* keeping font from overlapping on vertical line at 768px and lower */

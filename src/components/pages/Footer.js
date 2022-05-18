@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div>
-        <footer id="ContactMe">
+        <footer className="footBar">
 
         <section>
             <ul>
@@ -17,8 +17,8 @@ const Footer = () => {
             </ul>
         </section>
     </footer>
-    <footer id="second-footer">
-        <h4>&copy; 2022 - MJJ Services</h4>
+    <footer className="footBar">
+        <h6>&copy; 2022 - MJJ Services</h6>
     </footer>
     </div>
     );
