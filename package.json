@@ -2,6 +2,7 @@
   "name": "du-hw20-react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gittinit6.github.io/du-hw20-react-portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
